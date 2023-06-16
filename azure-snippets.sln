@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "get-credentials", "get-credentials\get-credentials.csproj", "{A05232BB-9659-4C34-98CA-49C56D8FBE6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck", "HealthCheck\HealthCheck.csproj", "{849C4C95-F7B6-45B3-89EB-BAC5E8B2DE95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOptionAndValidation", "IOptionAndValidation\IOptionAndValidation.csproj", "{0A86FF27-1F8C-485E-A336-19225A1EBC67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A05232BB-9659-4C34-98CA-49C56D8FBE6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A05232BB-9659-4C34-98CA-49C56D8FBE6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A05232BB-9659-4C34-98CA-49C56D8FBE6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A05232BB-9659-4C34-98CA-49C56D8FBE6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{849C4C95-F7B6-45B3-89EB-BAC5E8B2DE95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{849C4C95-F7B6-45B3-89EB-BAC5E8B2DE95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{849C4C95-F7B6-45B3-89EB-BAC5E8B2DE95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{849C4C95-F7B6-45B3-89EB-BAC5E8B2DE95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A86FF27-1F8C-485E-A336-19225A1EBC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A86FF27-1F8C-485E-A336-19225A1EBC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A86FF27-1F8C-485E-A336-19225A1EBC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A86FF27-1F8C-485E-A336-19225A1EBC67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
