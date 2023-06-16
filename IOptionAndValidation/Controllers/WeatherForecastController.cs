@@ -1,4 +1,7 @@
+using IOption.Validators;
+using LanguageExt;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace IOption.Controllers;
 
@@ -12,10 +15,12 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
+    private readonly IOptions<Example3Option> _cfg;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, IOptions<Example3Option> cfg)
     {
         _logger = logger;
+        _cfg = cfg;
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
@@ -28,5 +33,17 @@ public class WeatherForecastController : ControllerBase
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+    }
+
+    private Option<Example3Option> GetOptionString()
+    {
+        return _cfg.Value;
+    }
+
+    [HttpGet("HelloWorld")]
+    public IActionResult GetMsg()
+    {
+        var xx = GetOptionString();
+        return xx.Match<IActionResult>(Ok, NotFound());
     }
 }
